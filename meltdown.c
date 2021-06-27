@@ -255,7 +255,7 @@ int main(int argc, char *argv[])
 
 	set_cache_hit_threshold();
 
-	fd = open("/proc/version", O_RDONLY);
+	fd = open("/dev/memdev0", O_RDONLY);
 	if (fd < 0) {
 		perror("open");
 		return -1;
